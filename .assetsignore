@@ -1,0 +1,9 @@
+node_modules
+package.json
+package-lock.json
+wrangler.jsonc
+CLOUDFLARE_DEPLOYMENT.md
+.wrangler
+.git
+.gitignore
+*.md

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E1B4B" />
+      <stop offset="40%" stop-color="#4F46E5" />
+      <stop offset="80%" stop-color="#7C3AED" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded box -->
+  <rect width="120" height="120" rx="26" fill="#0B1120"/>
+
+  <!-- Sparkling Star Top-Left -->
+  <g transform="translate(32, 38)">
+    <path d="M0 -22 L4 -6 L20 -6 L8 4 L13 20 L0 10 L-13 20 L-8 4 L-20 -6 L-4 -6 Z" fill="url(#starGrad)"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Stylized N & Upward Arrow -->
+  <path d="M22 84 L38 48 L52 70 L72 32 L66 32 L84 20 L96 46 L86 42 L66 84 L48 58 L36 84 Z" 
+        fill="url(#purpleGrad)" stroke="#1E1B4B" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
