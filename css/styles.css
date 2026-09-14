@@ -979,8 +979,9 @@ textarea.form-control { min-height: 150px; resize: vertical; }
   border-color: rgba(0,0,0,0.2);
 }
 .client-logo-item img {
-  max-height: 44px;
-  max-width: 110px;
+  height: 30px;
+  width: auto;
+  max-width: 100%;
   object-fit: contain;
   filter: grayscale(100%);
   opacity: 0.8;
