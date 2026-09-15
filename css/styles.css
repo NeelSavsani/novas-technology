@@ -191,8 +191,9 @@ p { margin-bottom: 1rem; }
 /* Rotating Hero Headline */
 .text-rotator {
   display: inline-grid;
+  place-items: center;
   vertical-align: top;
-  text-align: left;
+  text-align: center;
   min-width: 320px;
   position: relative;
   overflow: hidden;
@@ -323,7 +324,8 @@ p { margin-bottom: 1rem; }
   }
   .text-rotator {
     min-width: 220px;
-    display: block;
+    display: grid;
+    place-items: center;
     margin: 0.2rem auto 0;
     text-align: center;
   }
@@ -908,8 +910,8 @@ textarea.form-control { min-height: 150px; resize: vertical; }
   
   .hero { padding: 7rem 0 4rem; min-height: auto; }
   .hero-title { font-size: clamp(2.5rem, 8vw, 4rem); }
-  .hero-actions { flex-direction: column; width: 100%; gap: 1rem; }
-  .hero-actions .btn-pill { width: 100%; }
+  .hero-actions { flex-direction: column; align-items: center; width: 100%; gap: 1rem; }
+  .hero-actions .btn-pill { width: 50%; margin: 0 auto; }
   
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .grid-3, .grid-2 { grid-template-columns: 1fr; gap: 1.5rem; }
