@@ -593,15 +593,15 @@ textarea.form-control { min-height: 150px; resize: vertical; }
 /* Floating WhatsApp Button */
 .wa-float {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 24px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
   z-index: 9999;
   display: flex;
@@ -610,13 +610,13 @@ textarea.form-control { min-height: 150px; resize: vertical; }
   transition: transform 0.3s ease;
 }
 .wa-float:hover {
-  transform: translateY(-5px) scale(1.05);
+  transform: translateY(-5px) scale(1.05) rotateZ(360deg);
   color: #FFF;
   box-shadow: 0px 6px 14px rgba(37, 211, 102, 0.4);
 }
 .wa-float svg {
-  width: 35px;
-  height: 35px;
+  width: 28px;
+  height: 28px;
   fill: currentColor;
 }
 
@@ -625,8 +625,8 @@ textarea.form-control { min-height: 150px; resize: vertical; }
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 100px; /* Above WhatsApp */
-  right: 35px;
+  bottom: 30px;
+  right: 30px;
   background-color: var(--text-main);
   color: var(--bg-color);
   border: none;
@@ -649,7 +649,7 @@ textarea.form-control { min-height: 150px; resize: vertical; }
 }
 .scroll-to-top:hover {
   background-color: var(--accent);
-  transform: translateY(-3px);
+  transform: translateY(-3px) rotateZ(360deg);
 }
 .scroll-to-top svg {
   width: 24px;
