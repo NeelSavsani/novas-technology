@@ -413,4 +413,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 8. Highlight Active Nav Link based on URL
+  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-links a');
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute('href');
+    if (linkPath === currentPath || (currentPath === '' && linkPath === 'index.html')) {
+      link.classList.add('active');
+    }
+  });
+
 });
